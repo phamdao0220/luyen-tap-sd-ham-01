@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let name=+prompt('nhap ten trom sao');
+    let a = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe ', 'Regulus'];
+    let b = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    let result = "";
+
+    function check(name) {
+        for (let i = 0; i < a.length; i++) {
+            if (name === a[i]) {
+                alert(b[i])
+            }
+        }
+    }
+
+    function checkIndex(name) {
+        if (a.indexOf(name) === -1) {
+            alert("Khong thay!");
+        } else {
+            alert(b[a.indexOf(name)])
+        }
+    }
+
+    checkIndex(name);
+</script>
+
+</body>
+</html>
